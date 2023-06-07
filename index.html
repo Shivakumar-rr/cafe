@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online food delivery service in india</title>
+    <link rel="stylesheet" href="css/photo.css">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+
+        }
+
+        /* navigation bar: logo and image*/
+        #logo {
+            margin: 10px 34px;
+
+
+        }
+
+        #logo img {
+            margin: 3px 10px;
+            height: 80px;
+            border-radius: 40px;
+
+        }
+
+        /*navigation bar list style*/
+        #navbar ul {
+            display: flex;
+            margin: 23px;
+            padding: 12px;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: aliceblue;
+            display: block;
+            padding: 3px 23px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+            left: 0px;
+            top: 0px;
+        }
+
+        #navbar ul li a:hover {
+            color: white;
+            background-color: black;
+
+        }
+
+        /* Home section */
+        #home {
+            padding: 3px 200px;
+            height: 580px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #home::before {
+            content: "";
+            background: url('./WEB\ APP/bg1.pg.jpg');
+            background-repeat: no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+            left: 0px;
+            top: 0px;
+        }
+
+        /*utility class*/
+
+        .h-primary {
+            content: '';
+            font-size: 2.8rem;
+            padding: 12px;
+
+
+        }
+
+        /*service section*/
+        #home h1 {
+            color: rgb(14, 11, 11);
+            align-items: center;
+        }
+
+        #home p {
+            color: white;
+            align-items: center;
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        #bne {
+            border: 4px solid rgb(98, 98, 140);
+            background-color: brown;
+            padding: 6px 20px;
+            color: white;
+            margin: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .h-secondery {
+            font-size: 3.8rem;
+            padding: 12px;
+            font-family: "Gill Sans", sans-serif;
+            font-size: 2.3rem;
+
+        }
+
+        /*service section*/
+        .box {
+            border-radius: 23px;
+            padding: 3px 30px;
+            margin: 15px;
+
+        }
+
+        #services {
+            display: flex;
+            margin: 34px;
+        }
+
+        #services .box {
+            border: 3px solid brown;
+            background-repeat: repeat;
+
+
+        }
+
+        #services .box img {
+            background-repeat: repeat;
+            height: 160px;
+            margin: auto;
+            display: block;
+
+        }
+
+        #services .box p {
+            font-family: system-ui;
+
+        }
+
+        /*clients section*/
+
+        #client-section::before{ 
+            content: " ";
+            position: absolute;
+            background: url("./WEB\ APP/bg6.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clients img {
+            height: 124px;
+        }
+
+        .client-item {
+            padding: 34px;
+            opacity: 1;
+        }
+
+        /* contact services*/
+        #contact-section {
+            position: relative;
+
+        }
+
+        #contact-section::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url("./WEB\ APP/bg9.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box form label {
+            font-size: 1.3rem;
+            font-family: sans-serif;
+        }
+
+        #contact-box ul {
+            background-color: red;
+        }
+
+        #temp {
+            background-color: red;
+            border: 3px solid rgb(15, 69, 156);
+            color: rgb(4, 4, 8);
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            text-align: center;
+            display: block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./WEB APP/logo.pg.jpg" alt="myonline.com" width="100px" height="100px">
+        </div>
+        <ul>
+            <li class="item"><a href="">Home</a></li>
+            <li class="item"><a href="">Services</a></li>
+            <li class="item"><a href="">About us</a></li>
+            <li class="item"><a href="">Contact us</a></li>
+            <!-- <li class="item"><a href="">Logout</a></li> -->
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Cafe-Leisure Cafe Kumarswamy Layout</h1>
+        <p>Good food is all it takes to make thing right.Order delicious food from cafe now.Enjoy all your favourites
+            cuisines at 50% off,When you order online on cafe.COD Available.Online payment option.Hassle-Free ordering.
+        </p>
+        <button id="bne">Order Now</button>
+    </section>
+
+    <section class="sevices-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="./WEB APP/bg3.jpg" alt="">
+
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p>breads and cereals, rice, pasta, noodles vegetables fruits dairy foods – reduced or low-fat milk,
+                    yoghurt and cheese lean meat and poultry, fish, eggs, nuts* and legumes (dried beans and lentils)
+                    water.</p>
+            </div>
+
+            <div class="box">
+                <img src="./WEB APP/bg6.jpg" alt="">
+
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p>Now Order your favorite Tasty Food From TCK's extensive multicuisine menu by the kilo. Same Taste,
+                    Same Quality at Discounted Rates. Birthday Party? Calling guests over? Celebrating your Anniversary?
+                    Special Occasion? Be at ease. Simply place the order and Relax....</p>
+            </div>
+
+            <div class="box">
+                <img src="./WEB APP/bg5.jpeg" alt="">
+
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p>Web Order food online from FreshMenu. Choose from a wide range of cuisines and categories for food
+                    delivery. Get fresh home delivered food at your doorstep from FreshMenu....</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="./WEB APP/logo1.jpg" alt="Ouer Clients">
+            </div>
+
+            <div class="client-item">
+                <img src="./WEB APP/logo2.jpeg" alt="Ouer Clients">
+            </div>
+
+            <div class="client-item">
+                <img src="./WEB APP/logo3.webp" alt="Ouer Clients">
+            </div>
+
+            <div class="client-item">
+                <img src="./WEB APP/logo4.webp" alt="Ouer Clients">
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+
+    <section id="contact-section">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">phone no</label>
+                    <input type="text" name="name" id="phone no" placeholder="Enter your number">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Message</label>
+                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                    <!-- <ul>
+                    <input type="submit" value="Submit Now"  >
+                </ul> -->
+                </div>
+
+                <div id="temp">
+                    <input type="submit" value="Submit Now">
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <footer>
+        <div class="center">
+            copyright&copy;www.MyOnlineMail.com.All right reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
